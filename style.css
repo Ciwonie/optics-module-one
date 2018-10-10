@@ -35,4 +35,7 @@ html {
     line-height: 2;
 }
 
+figcaption {
+  font-size: 14px;
+}
 
