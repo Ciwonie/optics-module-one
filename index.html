@@ -71,7 +71,7 @@
             <ul>
                 <li>Connecting Wires</li>
                 <li>Breadboard</li>
-                <li>Voltage Generator</li>
+                <li>DC Power Supply</li>
                 <li>Digital Multimeter</li>
                 <li>Resistor</li>
             </ul>
@@ -188,7 +188,8 @@
             light sources.
             Those sources include a calibrated light source, a 10W incandescent light bulb, and a green LED. In order
             to control the conical direction of light from the sources, each light emitting source was mounted inside
-            an integrating sphere. A small spherical shell used to contain and direct light sources through opal glass.
+            an integrating sphere. It is a small spherical shell used to contain and direct light sources through opal
+            glass.
             The following images show the 10W light bulb before and after installation into the sphere:
         </p>
         <div class="row">
@@ -205,9 +206,122 @@
         </div>
         <p>
             Before turning on the 10W light bulb, baseline data was recorded with the calibrated light source through
-            the opal glass. This establishes a standard set of values across the visible light spectrum from 380nm to
-            780nm. We are able to compare data of other light sources to the calibrated results.
+            the opal glass. This established a standard set of values across the visible light spectrum from 380nm to
+            780nm. We were able to compare data of other light sources to the calibrated results.
         </p>
+        <p>With a DC power supply, we measured spectral radiance of the opal glass from 0 V to 12 V, incrementing by
+            0.5 V. With each increment, we used digital multimeters to measure voltage potential across the light bulb
+            and amperage through the source. The setup looks as followed:
+        </p>
+        <div class="row">
+            <div class="col-sm">
+                <div class="col-sm"><img src="img/ten.png" class="img-fluid" alt="Responsive image">
+                    <figcaption>Fig.9 - 10W bulb with power supply and DMMs</figcaption>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <p>
+                    As voltage output increased, intensity from the light source grew. Based on what was outputted from
+                    the DC power supply, the digital multimeters nearly matched similar values across the light bulb.
+                    Our primary focus of 10W bulb was to
+                    calculate luminous flux and luminous efficacy through the opal glass. In order to calculate
+                    luminous flux based on the data received, we had to convert spectral radiance into spectral flux.
+                </p>
+                <div class="col-sm text-center"><img src="img/eleven.png" class="img-fluid" alt="Responsive image">
+                    <figcaption>Fig.10 - Spectral radiant flux conversion</figcaption>
+                </div>
+                <p>
+                    Here, ΦLB(λ) in Fig.10 is the spectral radiant flux of the light bulb, ΦCS(λ) is the known spectral
+                    radiant
+                    flux of the calibrated light source, and LLB(λ) and LCS(λ) are the measured
+                    radiance off of the opal glass. To calculate the actual luminance flux, the following conversion
+                    was made:
+                </p>
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <div class="col-sm"><img src="img/twelve.png" class="img-fluid" alt="Responsive image">
+                            <figcaption>Fig.11 - Spectral radiant flux to luminance flux</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <table>
+                    <tbody>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">&nbsp;Output (V)</td>
+                            <td style="height: 23px;">DMM (V)&nbsp;</td>
+                            <td style="height: 23px;">DMM (A)</td>
+                        </tr>
+                        <tr style="height: 33px;">
+                            <td style="height: 33px;">7&nbsp;</td>
+                            <td style="height: 33px;">
+                                <p>6.90&nbsp;</p>
+                            </td>
+                            <td style="height: 33px;">0.629&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">7.5&nbsp;</td>
+                            <td style="height: 23px;">7.48&nbsp;</td>
+                            <td style="height: 23px;">0.657&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">8&nbsp;</td>
+                            <td style="height: 23px;">7.96&nbsp;</td>
+                            <td style="height: 23px;">0.679&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">8.5&nbsp;</td>
+                            <td style="height: 23px;">8.48&nbsp;</td>
+                            <td style="height: 23px;">0.699&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">9&nbsp;</td>
+                            <td style="height: 23px;">8.92</td>
+                            <td style="height: 23px;">0.718&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">9.5&nbsp;</td>
+                            <td style="height: 23px;">9.40&nbsp;</td>
+                            <td style="height: 23px;">0.738&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">10&nbsp;</td>
+                            <td style="height: 23px;">9.89&nbsp;</td>
+                            <td style="height: 23px;">0.757&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">10.5&nbsp;</td>
+                            <td style="height: 23px;">10.39&nbsp;</td>
+                            <td style="height: 23px;">0.778&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">11&nbsp;</td>
+                            <td style="height: 23px;">10.92&nbsp;</td>
+                            <td style="height: 23px;">0.798&nbsp;</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">11.5&nbsp;</td>
+                            <td style="height: 23px;">&nbsp;11.37</td>
+                            <td style="height: 23px;">0.815</td>
+                        </tr>
+                        <tr style="height: 23px;">
+                            <td style="height: 23px;">&nbsp;12</td>
+                            <td style="height: 23px;">&nbsp;11.97</td>
+                            <td style="height: 23px;">0.835&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption>Fig.10 - A portion of measured voltage and amperage</figcaption>
+            </div>
+            <br>
+
+            <p>To verify our measurments, we calculated the luminous flux of the calibrated light source to 343 lm, matching expected results.</p>
+        </div>
     </div>
 
 
